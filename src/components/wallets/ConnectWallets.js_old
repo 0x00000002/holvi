@@ -1,0 +1,41 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+import List from '@material-ui/core/List'
+import DialogTitle from '@material-ui/core/DialogTitle'
+import Dialog from '@material-ui/core/Dialog'
+import { Metamask } from './index'
+
+const WalletsDialog = ({ onClose, open }) => (
+  <Dialog onClose={onClose} aria-labelledby='simple-dialog-title' open={open}>
+    <DialogTitle id='simple-dialog-title'>Choose wallet to connect</DialogTitle>
+    <List>
+      <Metamask closer={onClose} />
+    </List>
+  </Dialog>
+)
+
+WalletsDialog.propTypes = {
+  onClose: PropTypes.func.isRequired,
+  open: PropTypes.bool.isRequired
+}
+
+export const ConnectWallets = () => {
+  const [open, setOpen] = React.useState(false)
+
+  const handleClickOpen = () => {
+    setOpen(true)
+  }
+
+  const handleClose = () => {
+    setOpen(false)
+  }
+
+  return (
+    <div>
+      <a href='#connectMetamask' className='btn-tr' onClick={handleClickOpen}>
+        <span>Connect Wallet</span>
+      </a>
+      <WalletsDialog open={open} onClose={handleClose} />
+    </div>
+  )
+}

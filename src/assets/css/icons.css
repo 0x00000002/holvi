@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'fontello';
+    src: url('../icons/fontello.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    text-decoration: inherit;
+    text-align: center;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+}
+
+.icon-down-open:before { content: '\e800'; }
+.icon-conversation:before { content: '\e801'; }
+.icon-copy:before { content: '\e802'; }
+.icon-medal:before { content: '\e803'; }
+.icon-moon:before { content: '\e804'; }
+.icon-left-open:before { content: '\e805'; }
+.icon-right-open:before { content: '\e806'; }
+.icon-safe:before { content: '\e807'; }
+.icon-medium:before { content: '\e808'; }
+.icon-up-open:before { content: '\e809'; }
+.icon-wallet:before { content: '\e80a'; }
+.icon-info:before { content: '\e80b'; }
+.icon-link-ext:before { content: '\f08e'; }
+.icon-tw:before { content: '\f099'; }
+.icon-github:before { content: '\f09b'; }
+.icon-yt:before { content: '\f16a'; }
+.icon-telegram:before { content: '\f1d8'; }
+
+.ic-bar-chart{
+    background: url('../icons/svg/bar-chart_w.svg') center no-repeat;
+    background-size: 100%;
+}
+.ic-calendar{
+    background: url('../icons/svg/calendar_w.svg') center no-repeat;
+    background-size: 100%;
+}
+.ic-museum{
+    background: url('../icons/svg/museum_w.svg') center no-repeat;
+    background-size: 100%;
+}
+.ic-profits{
+    background: url('../icons/svg/profits_w.svg') center no-repeat;
+    background-size: 100%;
+}
+
+.ic-apy{
+    background: url('../icons/payments/apy.png') center no-repeat;
+    background-size: 100%;
+}
+.ic-btc{
+    background: url('../icons/payments/btc.png') center no-repeat;
+    background-size: 100%;
+}
+.ic-eth{
+    background: url('../icons/payments/eth.png') center no-repeat;
+    background-size: 100%;
+}
+
+.ic-metamask{
+    background: url('../icons/wallet/metamask.png') center no-repeat;
+    background-size: 100%;
+}
+.ic-trust{
+    background: url('../icons/wallet/trust.png') center no-repeat;
+    background-size: 100%;
+}
+.ic-math{
+    background: url('../icons/wallet/math.png') center no-repeat;
+    background-size: 100%;
+}
+.ic-token{
+    background: url('../icons/wallet/token-pocket.png') center no-repeat;
+    background-size: 100%;
+}
+.ic-connect{
+    background: url('../icons/wallet/connect.png') center no-repeat;
+    background-size: 100%;
+}
+.ic-binance{
+    background: url('../icons/wallet/binance.png') center no-repeat;
+    background-size: 100%;
+}
